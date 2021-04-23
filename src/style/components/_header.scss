@@ -1,7 +1,7 @@
 .page-header {
   background-image: url(../../assets/images/background.png);
   background-position: center;
-  padding: 2em $primaryPadding 20em;
+  padding: 2em $primaryPadding calc(#{$primaryPadding} - 2em);
 
   .welcome {
     padding-top: 5em;
@@ -13,5 +13,27 @@
   .welcome h1 {
     font-family: $primaryFont;
     font-size: 2.5em;
+  }
+
+  .welcome--play-button { margin-top: 3em; }
+  .welcome--play-button button {
+    display: flex;
+    align-items: center;
+
+    color: $whiteColor;
+    font-size: 1em;
+    font-family: $primaryFont;
+    font-weight: 600;
+    letter-spacing: .5px;
+    background-image: linear-gradient(135deg, #{$lighterOrangeColor}, #{$darkerOrangeColor});
+    cursor: pointer;
+
+    padding: 1em 2em;
+    border-radius: 1em;
+  }
+
+  .welcome--play-button button svg {
+    margin-right: 1em;
+    font-size: 1.2em;
   }
 }
