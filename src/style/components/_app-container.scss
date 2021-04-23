@@ -1,0 +1,9 @@
+.main-app-section {
+  padding: 0 15em;
+  margin-top: -10em;
+
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 5em;
+}
