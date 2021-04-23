@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Poppins";
-  src: url(../assets/fonts/Poppins-Regular.ttf);
+  src: url(../assets/fonts/Poppins-Regular.ttf), url(../assets/fonts/Poppins-SemiBold.ttf);
 }
 @font-face {
   font-family: "Roboto";
@@ -17,9 +17,12 @@ $lighterOrangeColor: #F06520;
 $darkerOrangeColor: #FC8E06;
 $whiteColor: #ffffff;
 
+$boxShadow: rgba(0, 0, 0,.05) 0 0px 20px;
+
 html {
   font-size: 15px;
   font-family: $secondaryFont;
+  background-color: #EFEFEF;
 }
 * {
   margin: 0;
