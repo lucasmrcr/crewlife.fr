@@ -15,7 +15,7 @@ const Navigation: React.FC =  () => (
             <div className="menu">
                 <ul>
                     <li className="active"><a href="/">Accueil</a></li>
-                    <li><a href="/#forum">Forum</a></li>
+                    <li><a href="https://forum.crewlife.fr">Forum</a></li>
                     <li><a href="/#statistiques">Statistiques</a></li>
                 </ul>
             </div>
