@@ -1,0 +1,37 @@
+.page-header--navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .search-bar label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-width: 20vw;
+    padding: .7em 1em;
+    border-radius: .5em;
+
+    font-family: Roboto, sans-serif;
+    background: $whiteColor;
+    transition: .3s min-width;
+  }
+  .search-bar label:focus-within { min-width: calc(50vw - #{$primaryPadding} + 1em); }
+  .search-bar input { width: -webkit-fill-available; }
+  .search-bar svg { cursor: pointer; }
+
+  .menu {
+    max-width: calc(50vw - #{$primaryPadding} + 1em);
+    min-width: calc(30vw - #{$primaryPadding} + 1em);
+  }
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu li { padding: .2em 0; }
+  .menu li.active { border-bottom: 2px solid $whiteColor; }
+  .menu a {
+    font-family: $primaryFont;
+    color: $whiteColor;
+  }
+}

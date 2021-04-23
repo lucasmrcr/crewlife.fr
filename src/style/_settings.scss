@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Light.ttf);
+}
+
+$primaryPadding: 15em;
+
+$primaryFont: "Poppins", sans-serif;
+$secondaryFont: "Roboto", sans-serif;
+
+$darkColor: #121211;
+$lighterOrangeColor: #F06520;
+$darkerOrangeColor: #FC8E06;
+$whiteColor: #ffffff;
+
+html {
+  font-size: 15px;
+  font-family: $secondaryFont;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
