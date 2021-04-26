@@ -1,0 +1,21 @@
+.team-mate {
+  text-align: center;
+
+  &:nth-child(-n+3) {
+    padding-bottom: 2em;
+  }
+  img {
+    height: 70px;
+    border-radius: 50%;
+  }
+
+  .team-mate--name {
+    font-family: $primaryFont;
+    font-weight: 600;
+  }
+  .team-mate--role {
+    font-family: $secondaryFont;
+    color: #909090;
+    font-weight: 300;
+  }
+}

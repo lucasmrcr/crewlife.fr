@@ -1,7 +1,33 @@
 .card {
-  padding: 1.3rem;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+
+  padding: 2rem 4rem;
   border-radius: 1rem;
+
   background-color: $whiteColor;
   box-shadow: $boxShadow;
-  height: 20vh;
+}
+
+.card--header {
+  position: relative;
+
+  p {
+    color: #404040;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+
+    small {
+      font-family: $secondaryFont;
+      color: #909090;
+      font-weight: 300;
+    }
+  }
+}
+
+.card--body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 4em;
 }

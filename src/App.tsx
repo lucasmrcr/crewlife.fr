@@ -4,14 +4,19 @@ import Header from './components/header'
 import AppContainer from './components/app-container'
 import Card from './components/card'
 import Footer from './components/footer'
+import Team from './components/team'
 
 function App() {
   return (
       <>
       <Header/>
       <AppContainer>
-          <Card title="test" component={null} />
-          <Card title="test" component={null} />
+          <Team />
+
+
+          <Card>
+              <></>
+          </Card>
       </AppContainer>
       <Footer/>
       </>
