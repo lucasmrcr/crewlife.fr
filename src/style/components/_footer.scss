@@ -1,0 +1,23 @@
+footer {
+  padding: 5em $primaryPadding;
+  text-align: center;
+
+  .footer-box { margin: 1em 0; }
+  .footer-box ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-box a, p {
+    color: #9EA5AB;
+    font-family: $primaryFont;
+    margin: 0;
+  }
+  .footer-box a {
+    padding: 0 1em;
+  }
+
+  .footer-box--social-network {
+    font-size: 1.5em;
+  }
+}
