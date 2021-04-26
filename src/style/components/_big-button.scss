@@ -1,0 +1,25 @@
+.big-button {
+  color: $whiteColor;
+  font-size: 1em;
+  font-family: $primaryFont;
+  font-weight: 600;
+  letter-spacing: .5px;
+  //background-image: linear-gradient(135deg, #{$lighterOrangeColor}, #{$darkerOrangeColor});
+  background-color: $lighterOrangeColor;
+  cursor: pointer;
+  padding: .7em 2em;
+  border-radius: 1em;
+  text-align: center;
+
+  svg {
+    margin-right: 1em;
+    font-size: 1.2em;
+  }
+
+  &.big-button--bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
