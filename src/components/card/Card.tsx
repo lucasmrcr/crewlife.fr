@@ -1,8 +1,7 @@
-import React from 'react'
+import React, {ReactElement, ReactNode} from 'react'
 
 interface CardProps {
-    title: string
-    component: React.FC<any> | null
+    children: ReactElement[] | ReactNode
     category?: CardCategory
 }
 
@@ -11,9 +10,9 @@ enum CardCategory {
     SECONDARY
 }
 
-const Card: React.FC<CardProps> = ({title, component, category = CardCategory.PRIMARY}) => (
+const Card: React.FC<CardProps> = ({children, category = CardCategory.PRIMARY}) => (
     <div className="card">
-
+        {children}
     </div>
 )
 
